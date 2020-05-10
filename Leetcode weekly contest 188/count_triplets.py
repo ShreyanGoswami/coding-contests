@@ -33,4 +33,8 @@ def countTriplets(self, arr: List[int]) -> int:
                 for k in range(j, n):
                     if prefixSum[i][j-1] == prefixSum[j][k]:
                         count += 1
+        '''
+        Final time complexity: O(n^3)
+        Final space complexity: O(n^2)
+        '''
         return count

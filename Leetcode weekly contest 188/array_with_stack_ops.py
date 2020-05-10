@@ -31,4 +31,9 @@ def buildArray(self, target: List[int], n: int) -> List[str]:
                     break
                 res.append('Push')
                 res.append('Pop')
+        '''
+        Final time complexity: O(n)
+        Final space complexity: O(n)
+        '''
         return res
+
