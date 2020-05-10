@@ -15,6 +15,10 @@ You are guaranteed that the answer is unique.
 from typing import List
 
 def buildArray(self, target: List[int], n: int) -> List[str]:
+        '''
+        Time complexity: O(n)
+        Space complexity: O(n)
+        '''
         res = []
         s = set(target)
         prefixSum = [0, 1]
@@ -31,9 +35,5 @@ def buildArray(self, target: List[int], n: int) -> List[str]:
                     break
                 res.append('Push')
                 res.append('Pop')
-        '''
-        Final time complexity: O(n)
-        Final space complexity: O(n)
-        '''
         return res
 

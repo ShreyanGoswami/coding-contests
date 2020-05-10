@@ -14,6 +14,10 @@ Return the number of triplets (i, j and k) Where a == b.
 from typing import List
 
 def countTriplets(self, arr: List[int]) -> int:
+        '''
+        Time complexity: O(n^3)
+        Space complexity: O(n^2)
+        '''
         prefixSum = []
         n = len(arr)
         count = 0
@@ -33,8 +37,4 @@ def countTriplets(self, arr: List[int]) -> int:
                 for k in range(j, n):
                     if prefixSum[i][j-1] == prefixSum[j][k]:
                         count += 1
-        '''
-        Final time complexity: O(n^3)
-        Final space complexity: O(n^2)
-        '''
         return count
