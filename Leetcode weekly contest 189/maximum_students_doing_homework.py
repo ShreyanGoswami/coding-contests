@@ -6,6 +6,10 @@ More formally, return the number of students where queryTime lays in the interva
 '''
 class Solution:
     def busyStudent(self, startTime: List[int], endTime: List[int], queryTime: int) -> int:
+        '''
+        Time complexity: O(n)
+        Space complexity: O(1)
+        '''
         n = len(startTime)
         total = 0
         for i in range(n):

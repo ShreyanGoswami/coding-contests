@@ -10,6 +10,10 @@ Return the new text following the format shown above.
 
 class Solution:
     def arrangeWords(self, text: str) -> str:
+        '''
+        Time complexity: O(nlogn)
+        Space complexity: O(n*m) where n is the number of words and m is the maximum number of letters in a word
+        '''
         words = text.split()
         words[0] = words[0].lower()
         words.sort(key = lambda x: len(x))
