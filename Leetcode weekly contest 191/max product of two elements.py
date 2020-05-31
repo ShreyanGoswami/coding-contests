@@ -3,6 +3,10 @@
 
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
+        '''
+        Time complexity O(nlogn)
+        Space complexity O(1)
+        '''
         maxProd = 0
         nums.sort()
         val1 = nums[-1]

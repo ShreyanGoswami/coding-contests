@@ -6,6 +6,10 @@
 from typing import List
 class Solution:
     def maxArea(self, h: int, w: int, hcuts: List[int], vcuts: List[int]) -> int:
+        '''
+        Time complexity O(nlogn)
+        Space complexity O(n)
+        '''
         hcuts.append(0)
         hcuts.append(h)
         hcuts.sort()
