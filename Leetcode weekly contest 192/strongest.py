@@ -11,8 +11,6 @@ Median is the middle value in an ordered integer list. More formally, if the len
 For arr = [6, -3, 7, 2, 11], n = 5 and the median is obtained by sorting the array arr = [-3, 2, 6, 7, 11] and the median is arr[m] where m = ((5 - 1) / 2) = 2. The median is 6.
 For arr = [-7, 22, 17, 3], n = 4 and the median is obtained by sorting the array arr = [-7, 3, 17, 22] and the median is arr[m] where m = ((4 - 1) / 2) = 1. The median is 3.
 '''
-
-
 from typing import List
 
 class Solution:
@@ -31,7 +29,6 @@ class Solution:
             res.append(x[0])
         return res
        
-
 if __name__ == "__main__":
     s= Solution()
     arr = [-7,22,17,3]
